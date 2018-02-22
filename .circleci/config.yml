@@ -13,4 +13,4 @@ jobs:
 
     steps:
       - checkout
-      - run mvn package
+      - run: mvn package
