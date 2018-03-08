@@ -10,3 +10,5 @@ EXPOSE 7777
 
 # this makes more sense comparing to RUN java -jar /opt/spring-boot/app/gs-spring-boot-0.1.0.jar because it wouldn't "pollute" your stdout
 CMD ["java", "-jar", "/opt/spring-boot/app/gs-spring-boot-0.1.0.jar"]
+
+# docker run -d -p 7777:8080 sample-spring-boot-app
