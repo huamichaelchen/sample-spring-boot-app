@@ -1,7 +1,12 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'local'
+    }
+
+  }
   stages {
-    stage('') {
+    stage('error') {
       steps {
         sh 'mvn package'
       }
