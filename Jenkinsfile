@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'local'
+    docker {
+      image 'circleci/openjdk:8-jdk'
     }
 
   }
